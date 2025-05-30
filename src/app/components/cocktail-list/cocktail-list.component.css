@@ -46,6 +46,15 @@
   background-color: #ffe5dc;
 }
 
+/* ACTIVE FILTER BUTTON */
+.filter-buttons button.active {
+  background-color: #ff7f50;
+  color: white;
+  border-color: #ff7f50;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 .drinks-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -81,6 +90,13 @@
 .drink-card p {
   color: #666;
   font-size: 0.9rem;
+}
+
+/* Focus styles for accessibility */
+button:focus,
+.drink-card:focus {
+  outline: 3px solid #ff7f50;
+  outline-offset: 3px;
 }
 
 /* Accessibility helper */
