@@ -1,6 +1,11 @@
 # CocktailApp
-<img width="1792" alt="Screenshot 2025-05-30 at 2 01 46 PM" src="https://github.com/user-attachments/assets/1e4a0bdd-4e21-4cbd-92fc-bf866ca4ff89" />
+<img width="1785" alt="Screenshot 2025-05-30 at 2 00 19 PM" src="https://github.com/user-attachments/assets/163a8cba-e663-46e6-b877-d7dd9b37ad27" />
 
+<img width="1786" alt="Screenshot 2025-05-30 at 2 00 49 PM" src="https://github.com/user-attachments/assets/efdcbd52-776a-40c4-832a-a443bb65c96c" />
+<img width="1790" alt="Screenshot 2025-05-30 at 2 01 09 PM" src="https://github.com/user-attachments/assets/4f9e9d33-816d-4108-8061-8ed56e8b213e" />
+![Uploading Screenshot 2025-05-30 at 2.01.25 PM.png…]()
+
+<img width="1792" alt="Screenshot 2025-05-30 at 2 01 46 PM" src="https://github.com/user-attachments/assets/7aecd740-b814-4282-98e6-72f798df3647" />
 
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.14.
