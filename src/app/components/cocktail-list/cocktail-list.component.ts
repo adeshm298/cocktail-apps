@@ -9,12 +9,12 @@ import { HeaderComponent } from "../../common/header/header.component";
   selector: 'app-cocktail-list',
   templateUrl: './cocktail-list.component.html',
   styleUrls: ['./cocktail-list.component.css'],
-  imports: [CommonModule,HeaderComponent]
+  imports: [CommonModule, HeaderComponent]
 })
 export class CocktailListComponent implements OnInit {
   drinks: any[] = [];
   filteredDrinks: any[] = [];
-  filter: string = 'All';
+  currentFilter: string = 'All'; // <-- changed from "filter" to "currentFilter"
 
   constructor(private cocktailService: CocktailService, private router: Router) {}
 
@@ -26,8 +26,7 @@ export class CocktailListComponent implements OnInit {
   }
 
   applyFilter(filter: string) {
-    console.log(JSON.stringify(this.drinks))
-    this.filter = filter;
+    this.currentFilter = filter; // <-- update the correct property
     if (filter === 'All') {
       this.filteredDrinks = this.drinks;
     } else {
@@ -36,7 +35,6 @@ export class CocktailListComponent implements OnInit {
   }
 
   viewDetails(id: string) {
-    console.log(id)
     this.router.navigate(['/ingredient', id]);
   }
 }
