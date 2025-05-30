@@ -42,15 +42,15 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  user-select: none; /* Prevent text selection on click */
+  user-select: none;
 }
 
 .drink-card:hover,
 .drink-card:focus {
   transform: translateY(-5px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-  outline: none; /* Remove default focus outline */
-  /* You can add a custom focus style here if you want */
+  outline: none; 
+
 }
 
 .drink-card img {
@@ -58,7 +58,7 @@ body {
   height: 200px;
   object-fit: cover;
   border-bottom: 1px solid #eee;
-  pointer-events: none; /* Prevent image drag */
+  pointer-events: none; 
 }
 
 .drink-card h3 {

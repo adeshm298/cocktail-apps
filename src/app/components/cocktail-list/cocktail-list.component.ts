@@ -14,7 +14,7 @@ import { HeaderComponent } from "../../common/header/header.component";
 export class CocktailListComponent implements OnInit {
   drinks: any[] = [];
   filteredDrinks: any[] = [];
-  currentFilter: string = 'All'; // <-- changed from "filter" to "currentFilter"
+  currentFilter: string = 'All'; 
 
   constructor(private cocktailService: CocktailService, private router: Router) {}
 
@@ -26,7 +26,7 @@ export class CocktailListComponent implements OnInit {
   }
 
   applyFilter(filter: string) {
-    this.currentFilter = filter; // <-- update the correct property
+    this.currentFilter = filter; 
     if (filter === 'All') {
       this.filteredDrinks = this.drinks;
     } else {

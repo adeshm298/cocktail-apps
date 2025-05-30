@@ -1,4 +1,3 @@
-// home.component.ts
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { CocktailListComponent } from '../cocktail-list/cocktail-list.component';
