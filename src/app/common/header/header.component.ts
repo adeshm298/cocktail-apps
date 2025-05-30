@@ -7,7 +7,7 @@ import { Router, RouterModule } from '@angular/router';
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
-  imports: [CommonModule, RouterModule]  // <--- add this
+  imports: [CommonModule, RouterModule] 
 })
 export class HeaderComponent {
 constructor(private router: Router) {}
