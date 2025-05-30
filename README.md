@@ -1,4 +1,7 @@
 # CocktailApp
+<img width="1792" alt="Screenshot 2025-05-30 at 2 01 46 PM" src="https://github.com/user-attachments/assets/1e4a0bdd-4e21-4cbd-92fc-bf866ca4ff89" />
+
+
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.14.
 
