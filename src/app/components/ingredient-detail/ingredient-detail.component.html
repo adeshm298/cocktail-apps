@@ -1,0 +1,29 @@
+<app-header></app-header>
+
+<main *ngIf="drink" class="ingredient-container">
+  <div class="content-grid">
+    <div class="left-side">
+      <h2 class="drink-title">{{ drink.strDrink }}</h2>
+      <img
+        class="drink-image"
+        [src]="drink.strDrinkThumb"
+        [alt]="drink.strDrink"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="right-side details">
+      <div class="detail-item"><span>Category:</span> {{ drink.strCategory }}</div>
+      <div class="detail-item"><span>Type:</span> {{ drink.strAlcoholic }}</div>
+      <div class="detail-item"><span>Glass:</span> {{ drink.strGlass }}</div>
+
+      <h3>Ingredients</h3>
+      <ul class="ingredients-list">
+        <li *ngFor="let item of getIngredients()">🧂 {{ item }}</li>
+      </ul>
+
+      <h3>Instructions</h3>
+      <p class="instructions">{{ drink.strInstructions }}</p>
+    </div>
+  </div>
+</main>

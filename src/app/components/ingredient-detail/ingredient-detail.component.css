@@ -1,0 +1,117 @@
+/* Main container */
+.ingredient-container {
+  /* max-width: 900px; */
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  padding: 2.5rem 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+/* Grid layout: image left, details right */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1.9fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Left side styling */
+.left-side {
+  text-align: center;
+}
+
+.drink-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #e67e22;
+  text-shadow: 0 2px 4px rgba(230,126,34,0.3);
+}
+
+.drink-image {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(230, 126, 34, 0.25);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.drink-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(230, 126, 34, 0.4);
+}
+
+/* Right side detail blocks */
+.right-side {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: #34495e;
+}
+
+.detail-item {
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.detail-item span {
+  color: #e67e22;
+}
+
+/* Section headings */
+h3 {
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #d35400;
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 0.25rem;
+}
+
+/* Ingredients list */
+.ingredients-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 1.8rem;
+  border-left: 4px solid #e67e22;
+  padding-left: 1rem;
+  max-width: 350px;
+}
+
+.ingredients-list li {
+  margin-bottom: 0.7rem;
+  font-size: 1.15rem;
+  color: #2c3e50;
+  font-weight: 500;
+  cursor: default;
+  transition: color 0.25s ease;
+}
+
+.ingredients-list li:hover {
+  color: #d35400;
+}
+
+/* Instructions text */
+.instructions {
+  font-style: italic;
+  color: #555;
+  white-space: pre-line;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .left-side {
+    margin-bottom: 2rem;
+  }
+
+  .ingredients-list {
+    max-width: 100%;
+  }
+}

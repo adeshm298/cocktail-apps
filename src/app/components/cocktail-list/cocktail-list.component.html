@@ -1,0 +1,28 @@
+<app-header></app-header>
+<!-- rest of your component HTML -->
+
+
+<section class="filter-section" aria-label="Drink filters">
+  <h2 class="visually-hidden">Filter Cocktails</h2>
+  <div class="filter-buttons">
+    <button (click)="applyFilter('All')" aria-label="Show all drinks">All</button>
+    <button (click)="applyFilter('Cocktail')" aria-label="Show only cocktails">Cocktail</button>
+    <button (click)="applyFilter('Ordinary Drink')" aria-label="Show only ordinary drinks">Ordinary Drink</button>
+  </div>
+</section>
+
+<main class="drinks-grid" aria-label="List of drinks">
+  <article 
+    class="drink-card" 
+    *ngFor="let drink of filteredDrinks" 
+    (click)="viewDetails(drink.idDrink)"
+    tabindex="0"
+    role="button"
+    aria-pressed="false"
+    [attr.aria-label]="drink.strDrink"
+  >
+    <h3>{{ drink.strDrink }}</h3>
+    <img [src]="drink.strDrinkThumb" [alt]="drink.strDrink" />
+    <p>{{ drink.strGlass }}</p>
+  </article>
+</main>
